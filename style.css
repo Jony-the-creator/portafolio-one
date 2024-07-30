@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-color: #000000;
+    --second-bg-color: #22D4FD;
+    --third-bg-color: #272727;
+    --text-color-primary: #F6F6F6;
+    --text-color-secundary: #22D4FD;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --krona-one-font: 'Krona One', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.header_menu_link{
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    font-size: 600;
+    color: var(--text-color-secundary);
+    text-decoration: none;
+}
+
+.title-span{
+    color: var(--text-color-secundary);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    margin: 10% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.about_content{
+    width: 50%;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about_content_title{
+    font-size: 2.25rem;
+    font-family: var(--krona-one-font);
+}
+
+.about_content_p{
+    font-size: 1.5rem;
+    font-family: var(--montserrat-font);
+}
+
+.about_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.btn{
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    border: 2px solid var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn:hover{
+    background-color: var(--third-bg-color);
+}
+
+.about_links_subtitle{
+    font-family: var(--krona-one-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.img{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--second-bg-color);
+    padding: 24px;
+    color: var(--bg-color);
+    text-align: center;
+    font-family: var(--montserrat-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .about_content{
+        width: auto;
+    }
+}
